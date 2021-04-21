@@ -64,6 +64,11 @@ uvdesk_api_bundle_api_tickets_v1.0_download_attachment_zip:
     methods: [POST]
     requirements:
         threadId: '\d+'
+
+uvdesk_api_bundle_api_tickets_v1.0_edit_ticket_property_post_method:
+    path: /ticket/{ticketId}/update
+    controller: Webkul\UVDesk\ApiBundle\API\Tickets::editTicketProperties
+    methods: [POST]
         
 uvdesk_api_bundle_api_tickets_v1.0_edit_ticket_property:
     path: /ticket/{ticketId}
